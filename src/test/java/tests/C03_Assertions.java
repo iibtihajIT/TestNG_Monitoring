@@ -12,7 +12,7 @@ public class C03_Assertions {
         Assert.assertEquals(5, 5);
         System.out.println("-------------");
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
         System.out.println("**************");//This line will not be executed.
 
     }
@@ -21,14 +21,19 @@ public class C03_Assertions {
     void softAssertionTest() {
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(5, 5);
+        softAssert.assertEquals(15, 5);
         System.out.println("-------------");
 
-        softAssert.assertTrue(true);
+        softAssert.assertTrue(false);
         System.out.println("**************");//This line will not be executed.
 
         softAssert.assertAll();
         System.out.println("=============");
+    }
+
+    @Test
+    void dummyTest() {
+
     }
 
 

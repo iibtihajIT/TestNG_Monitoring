@@ -17,7 +17,7 @@ public class C01_Annotations {
 
     @AfterMethod
     void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         driver.quit();
     }
 
@@ -33,6 +33,16 @@ public class C01_Annotations {
 
     @Test
     void test02() {
+        System.out.println("Test 02");
+    }
+
+    @Test
+    void test04() {
+        System.out.println("Test 04");
+    }
+
+    @Test
+    void test05() {
         System.out.println("Test 02");
     }
 

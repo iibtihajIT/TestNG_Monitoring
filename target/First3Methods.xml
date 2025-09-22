@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="First 3 Methods">
+        <classes>
+            <class name="tests.C02_Attributes">
+                <methods>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test06"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
