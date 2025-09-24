@@ -33,12 +33,12 @@ public class T01_HardAssertLoginTest {
         // 4. Click Submit
         WebElement submitBtn = driver.findElement(By.xpath("//input[@type='submit' and @value='Sign In']"));
 
-        // 5a. Hard Assertion URL (الآن صحيح)
+        // 5a. Hard Assertion URL  
         String actualUrl = driver.getCurrentUrl();
-        String expectedUrl = "https://claruswaysda.github.io/signIn.html"; // الرابط الصحيح
+        String expectedUrl = "https://claruswaysda.github.io/signIn.html"; 
         Assert.assertEquals(actualUrl, expectedUrl, "URL check failed!");
 
-        // 5b. Hard Assertion نص Employee Table
+        // 5b. Hard Assertion Employee Table
         Assert.assertTrue(driver.getPageSource().contains("Employee Table"), "Text not found!");
     }
 
