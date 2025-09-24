@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="Chrome CrossBrowserForm">
+        <parameter name="name" value="Mario"></parameter>
+        <parameter name="age" value="20"></parameter>
+        <parameter name="department" value="Finance"></parameter>
+        <classes>
+            <class name="tests.C11_CrossBrowserForm"> </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Firefox CrossBrowserForm">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="name" value="Bob"></parameter>
+        <parameter name="age" value="30"></parameter>
+        <parameter name="department" value="Marketing"></parameter>
+        <classes>
+            <class name="tests.C11_CrossBrowserForm"> </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Edge CrossBrowserForm">
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="name" value="Liam"></parameter>
+        <parameter name="age" value="50"></parameter>
+        <parameter name="department" value="Human Resources"></parameter>
+        <classes>
+            <class name="tests.C11_CrossBrowserForm"> </class>
+        </classes>
+    </test>
+
+</suite>
